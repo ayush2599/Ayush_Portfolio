@@ -774,7 +774,7 @@ body {
     top: 250px;
 }
 
-span {
+#cursor {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
 }
@@ -816,17 +816,18 @@ span {
     margin-left: 100px;
 }
 
-#spin {
+#changing_data {
     padding-left: 20px;
 
 }
 
-#spin:after {
+#changing_data:after {
     content: "";
-    animation: spin 5s linear infinite;
+    animation: changing_data 5s linear infinite;
+    transition: 0.5s;
 }
 
-@keyframes spin {
+@keyframes changing_data {
     0% {
         content: "A \00a0  DEVELOPER";
     }
@@ -937,6 +938,7 @@ span {
     color: white;
     font-family: 'Varela', sans-serif;
     text-decoration: none;
+
 }
 
 .get-in-touch-btn:hover {
@@ -952,7 +954,6 @@ span {
     background-size: cover;
     margin: 0;
     padding: 0;
-    z-index: 0;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1310,4 +1311,8 @@ hr.soften.white {
     text-align: center;
     align-content: center;
     display: inline-block;
+}
+
+.social_media a:hover {
+    color: #3c81c7;
 }

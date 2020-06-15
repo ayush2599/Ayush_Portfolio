@@ -1,0 +1,387 @@
+<html>
+
+<head>
+    <title>
+        Ayush Karn
+    </title>
+    <link rel="icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+</head>
+<style>
+    // Fonts
+    @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+    @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+    // Helpersa
+    @mixin clearfix {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+
+    .row {
+        margin: -20px 0;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .row .col {
+        padding: 0 20px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .row .col.x-50 {
+        width: 50%;
+    }
+
+    .row .col.x-100 {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        min-height: 100%;
+        position: relative;
+    }
+
+    .get-in-touch {
+        max-width: 650px;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        left: 0;
+    }
+
+    .get-in-touch .title {
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 10px;
+    }
+
+    .get-in-touch .contact {
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 3px;
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    .contact-form .form-field {
+        position: relative;
+        margin: 32px 0;
+    }
+
+    .contact-form .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        border-color: #000;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    .contact-form .input-text:focus {
+        outline: none;
+    }
+
+    .contact-form .input-text:focus+.label,
+    .contact-form .input-text.not-empty+.label {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+    }
+
+    .contact-form .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        -webkit-transition: -webkit-transform .2s ease-in-out;
+        transition: -webkit-transform .2s ease-in-out;
+        transition: transform .2s ease-in-out;
+        transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+
+    .contact-form .submit-btn {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        font-family: Raleway, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <div class="nav" id="mynav">
+        <div class="logo">
+            <div class="stage">
+                <div class="wrapper">
+                    <div class="slash"></div>
+                    <div class="sides">
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="text">
+                        <div class="text--backing">ayushkarn.</div>
+                        <div class="text--left">
+                            <div class="inner">ayushkarn.</div>
+                        </div>
+                        <div class="text--right">
+                            <div class="inner">ayushkarn.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="artworks.html">Artworks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+
+    </div>
+
+    <div class="container" data-aos="fade-up" style="height: 800px;">
+        <section class="get-in-touch">
+            <h1 class="title">Get in touch</h1>
+            <form class="contact-form row">
+                <div class="form-field col x-50">
+                    <input id="name" class="input-text js-input" type="text" required>
+                    <label class="label" for="name">Name</label>
+                </div>
+                <div class="form-field col x-50">
+                    <input id="email" class="input-text js-input" type="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <div class="form-field col x-100">
+                    <input id="message" class="input-text js-input" type="text" required>
+                    <label class="label" for="message">Message</label>
+                </div>
+                <div class="form-field col x-100 align-center">
+                    <input class="submit-btn" type="submit" value="Submit">
+                </div>
+            </form><br>
+            <h1 class="title">Or Contact me Directly</h1>
+            <h2 class="contact"><i class="fa fa-envelope m-3"></i>ayush_karn@yahoo.com</h2>
+            <h2 class="contact"><i class="fa fa-phone m-3"></i>+91-8300875021 | +977-9841830776</h2>
+        </section>
+    </div>
+
+    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;height: 400px;">
+        <div class="container-title" data-aos="fade-up" style="color: #fff;">
+            LET ME CREATE WHAT YOU NEED.
+            <hr class="soften white" />
+        </div>
+        <div class="footer-menu" data-aos="fade-up">
+            <ul class="footer-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="artworks.html">Artworks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content" data-aos="fade-up" style="margin-top: 20px;font-size: 0.8em; ">
+            © 2020 Ayush Karn. All rights reserved.
+        </div>
+        <div class="social_media" data-aos="fade-up">
+            <a href="https://www.github.com/ayush2599"><i class="fa fa-github m-3"></i></a>
+            <a href="https://www.linkedin/ayush-karn25"><i class="fa fa-linkedin m-3"></i></a>
+            <a href="https://www.instagram.com/ayush_diaries"><i class="fa fa-instagram m-3"></i></a>
+            <a href="https://www.facebook.com/ayush.karn25"><i class="fa fa-facebook m-3"></i></a>
+            <a href="https://www.twitter.com/ayush_karn25"><i class="fa fa-twitter m-3"></i></a>
+        </div>
+    </div>
+</body>
+
+<script>
+    const navSlide = () => {
+        const menu = document.querySelector('.menu');
+        const nav = document.querySelector('.menu-list');
+        const menuList = document.querySelectorAll('.menu-list li');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+
+            menuList.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navReveal 0.5s ease forwards ${index / 7 + 0.5}s`;
+                }
+            });
+            menu.classList.toggle('toggle');
+        });
+    }
+
+    navSlide();
+
+    $(function() {
+        var header = $("#mynav");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 200) {
+                header.removeClass('nav').addClass('nav2');
+            } else {
+                header.removeClass('nav2').addClass('nav');
+            }
+        });
+    });
+
+</script>
+
+
+
+<script>
+    const navSlide = () => {
+        const menu = document.querySelector('.menu');
+        const nav = document.querySelector('.menu-list');
+        const menuList = document.querySelectorAll('.menu-list li');
+
+        menu.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+
+            menuList.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navReveal 0.5s ease forwards ${index / 7 + 0.5}s`;
+                }
+            });
+            menu.classList.toggle('toggle');
+        });
+    }
+
+    navSlide();
+
+    $(function() {
+        var header = $("#mynav");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 200) {
+                header.removeClass('nav').addClass('nav2');
+            } else {
+                header.removeClass('nav2').addClass('nav');
+            }
+        });
+    });
+
+
+    const curry = f => (...args) =>
+        args.length >= f.length ?
+        f(...args) :
+        curry(f.bind(f, ...args));
+
+    const compose = (f, g) => x => f(g(x));
+    const composeN = (...fns) => (...args) =>
+        fns.reverse().
+    reduce((x, f) => f.apply(f, [].concat(x)), args);
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+        // array with texts to type in typewriter
+        var dataText = ["Hello.", "Namaste.", "This is", "AYUSH KARN !"];
+
+        // type one text in the typwriter
+        // keeps calling itself until the text is finished
+        function typeWriter(text, i, fnCallback) {
+            // chekc if text isn't finished yet
+            if (i < (text.length)) {
+                // add next character to h1
+                document.querySelector(".intro_text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+                // wait for a while and call this function again for next character
+                setTimeout(function() {
+                    typeWriter(text, i + 1, fnCallback)
+                }, 100);
+            }
+            // text finished, call callback if there is a callback function
+            else if (typeof fnCallback == 'function') {
+                // call callback after timeout
+                setTimeout(fnCallback, 700);
+            }
+        }
+        // start a typewriter animation for a text in the dataText array
+        function StartTextAnimation(i) {
+            if (typeof dataText[i] == 'undefined') {
+                setTimeout(function() {
+                    StartTextAnimation(0);
+                }, 500);
+            }
+            // check if dataText[i] exists
+            if (i < dataText[i].length) {
+                // text exists! start typewriter animation
+                typeWriter(dataText[i], 0, function() {
+                    // after callback (and whole text has been animated), start next text
+                    StartTextAnimation(i + 1);
+                });
+            }
+        }
+        // start the text animation
+        StartTextAnimation(0);
+    });
+
+</script>
+<script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+
+<script id="rendered-js">
+    AOS.init({
+        duration: 1200
+    });
+
+</script>
+
+</html>
