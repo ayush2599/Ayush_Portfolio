@@ -19,7 +19,8 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 60px;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Muli',
+        sans-serif;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
     z-index: 1;
@@ -28,7 +29,6 @@ body {
     color: #000;
     box-shadow: 2px 2px 10px #3c3434;
 }
-
 
 .logo {
     z-index: 3;
@@ -69,7 +69,6 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #fff;
     z-index: 3;
 }
 
@@ -105,7 +104,7 @@ body {
         position: absolute;
         right: 0px;
         height: 400px;
-        top: 60px;
+        top: 40px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -126,13 +125,15 @@ body {
         position: absolute;
         right: 5px;
         display: block;
-        background: #000;
         color: #000;
     }
 
-    .line1 {
+    .line1,
+    .line2,
+    .line3 {
         background-color: #000;
         text-decoration-color: brown;
+        transition: 0.5s;
     }
 
     .nav {
@@ -158,8 +159,9 @@ body {
 }
 
 .line1,
+.line2,
+.line3,
 .toggle {
-    background: #000;
     color: #000;
 }
 
@@ -195,7 +197,7 @@ body {
     font-family: 'Muli', sans-serif;
     background-color: #fff;
     position: fixed;
-    z-index: 1;
+    z-index: 6;
     width: 100%;
     transition: 0.2s;
     box-shadow: 2px 2px 10px #3c3434;
@@ -204,8 +206,6 @@ body {
 #mynav {
     top: 0px !important;
 }
-
-
 
 .stage {
     width: 100%;
@@ -741,7 +741,6 @@ body {
     }
 }
 
-
 .header {
     position: relative;
     height: 100%;
@@ -844,6 +843,7 @@ body {
 .intro_content__container:before {
     content: '[';
     left: 50px;
+    color: #000;
     ;
 }
 
@@ -896,7 +896,7 @@ body {
 
     0%,
     100% {
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     50% {
@@ -908,7 +908,7 @@ body {
 
     0%,
     100% {
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     50% {
@@ -944,6 +944,7 @@ body {
 .get-in-touch-btn:hover {
     background-position: right center;
 }
+
 
 
 .container {
@@ -1212,6 +1213,7 @@ hr.soften.white {
     text-align: center;
     margin: auto;
 }
+
 
 .item {
     background-color: #e6e2dc;

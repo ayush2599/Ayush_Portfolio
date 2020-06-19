@@ -14,9 +14,92 @@
     <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
 </head>
 <style>
-    .pdfobject-container {
-        height: 60rem;
-        border: 1rem solid rgba(0, 0, 0, .1);
+    .items-container {
+        height: 3100px;
+    }
+
+    @media only screen and (max-width: 760px) {
+
+        .nav,
+        .nav2 {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .wrapper {
+            font-size: 1.6em;
+        }
+
+        hr.soften,
+        hr.soften.white {
+            width: 90%;
+        }
+
+        .container .content {
+            width: 80%;
+            text-align: justify;
+            padding-top: 20px;
+
+        }
+
+        .footer {
+            height: 700px;
+        }
+
+        .footer-menu li,
+        .footer-menu a {
+            display: block;
+            padding-top: 5px;
+        }
+
+        .footer .content {
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .item {
+            padding: 30px 0;
+            margin: 50px auto;
+        }
+
+        .item .rounded img {
+            width: 300px;
+            max-height: 190px;
+        }
+
+        .item-img {
+            display: table;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .item-des {
+            display: block;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+        }
+
+        .items-container {
+            width: 100%;
+            height: 5000px;
+        }
+
+        .more-width {
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        .des-width {
+            display: block;
+            width: 90%;
+            text-align: justify;
+        }
+
+        .menu-list {
+            top: 40px;
+        }
     }
 
 </style>
@@ -68,12 +151,12 @@
             My Projects
             <hr class="soften" />
         </div>
-        <div class="items-container more-width" style="height: 3400px;">
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
+        <div class="items-container more-width" style="">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
                 <div class="item-img rounded">
                     <img src="images/Nepali_corpus2.png">
                 </div>
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Nepali Language<br> Corpus & POS Tagger"
                     </div>
@@ -82,8 +165,8 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Hand Gesture Based Captcha Recognition System"
                     </div>
@@ -91,15 +174,15 @@
                     <br><br><i>Languages: Python, OpenCV, CNN</i>
                 </div>
                 <div class="item-img rounded">
-                    <img src="images/Hand_gesture_captcha.png" width="500px;">
+                    <img src="images/Hand_gesture_captcha.png">
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
                 <div class="item-img rounded">
                     <img src="images/Image_caption_generation.png">
                 </div>
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Image Description using RNN & CNN"
                     </div>
@@ -108,8 +191,8 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Crime Investigation System - Online Portal"
                     </div>
@@ -121,11 +204,11 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
                 <div class="item-img rounded">
                     <img src="images/Least_congestion_path.png">
                 </div>
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Least-Congestion Path Algorithm"
                     </div>
@@ -134,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
                 <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
                     <div class="desc-title" style="text-align: center;">
                         "Smart Fitness Tracker Using PulseSensor & Gyroscope"
@@ -147,11 +230,11 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to right, #eb5757, #000000);color: #fff;">
                 <div class="item-img rounded">
                     <img src="images/Make_Everest_Great_Again.png">
                 </div>
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Make Everest Great Again - Survey"
                     </div>
@@ -159,8 +242,8 @@
                 </div>
             </div>
 
-            <div class="item  more-width" data-aos="fade-up" style="padding: 20px;background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
-                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;text-align: left;">
+            <div class="item  more-width" data-aos="fade-up" style="background: #eb5757;background: -webkit-linear-gradient(to right, #eb5757, #000000);background: linear-gradient(to left, #eb5757, #000000);color: #fff;">
+                <div class="item-des des-width" style="padding-top: 10px;padding-bottom: 10px;">
                     <div class="desc-title" style="text-align: center;">
                         "Online Recruitments Portal - TFAC"
                     </div>
@@ -178,7 +261,7 @@
         </div>
     </div>
 
-    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;height: 400px;">
+    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;">
         <div class="container-title" data-aos="fade-up" style="color: #fff;">
             LET ME CREATE WHAT YOU NEED.
             <hr class="soften white" />

@@ -28,9 +28,64 @@
     <link rel="stylesheet" href="gallery/assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <style>
-    .pdfobject-container {
-        height: 60rem;
-        border: 1rem solid rgba(0, 0, 0, .1);
+    .footer {
+        height: 400px;
+    }
+
+    @media only screen and (max-width: 760px) {
+        .footer {
+            height: 700px;
+        }
+
+        .nav,
+        .nav2 {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .wrapper {
+            font-size: 1.6em;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .container .content {
+            width: 90%;
+            text-align: justify;
+            padding-top: 20px;
+
+        }
+
+        .footer-menu li,
+        .footer-menu a {
+            display: block;
+            padding-top: 5px;
+        }
+
+        .footer .content {
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        hr.soften,
+        hr.soften.white {
+            width: 90%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+
+        .menu-list {
+            top: 40px;
+        }
     }
 
 </style>
@@ -135,12 +190,13 @@
                         <div class="clearfix"></div>
                     </div>
                 </div><!-- Lightbox -->
+
                 <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery4-4" style="display: none;z-index: 1050;" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active" style="top: 10px;"><img src="../gallery/assets/images/hands-2000x3120.jpg" alt="Forever Love" title="Forever Love" style="width: 414px;height: 647px;"></div>
+                                    <div class="carousel-item active" style="top: 10px;"><img src="gallery/assets/images/hands-2000x3120.jpg" alt="Forever Love" title="Forever Love" style="width: 414px;height: 647px;"></div>
 
                                     <div class="carousel-item" style="top: 10px;"><img src="gallery/assets/images/2-2000x2500.jpg" alt="Iron Cage" title="Iron Cage" style="width: 517px; height: 647px;"></div>
 
@@ -181,6 +237,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -270,7 +327,7 @@
     <!--    <script src="gallery/assets/gallery/player.min.js"></script>-->
     <!--    <script src="gallery/assets/gallery/script.js"></script>-->
 
-    <div class="container footer" style="background-color: rgb(18, 22, 72); color: #fff;height: 400px;">
+    <div class="container footer" style="background-color: rgb(18, 22, 72); color: #fff;">
         <div class="container-title" style="color: #fff;margin: 0;width: 100%;padding: 0;">
             LET ME CREATE WHAT YOU NEED.
             <hr class="soften white" />
@@ -285,7 +342,7 @@
             </ul>
         </div>
         <div class="content" style="margin-top: 20px;font-size: 0.8em; ">
-            © 2020 Ayush Karn. All rights reserved.
+            &copy; 2020 Ayush Karn. All rights reserved.
         </div>
         <div class="social_media">
             <a href="https://www.github.com/ayush2599"><i class="fa fa-github m-3"></i></a>
@@ -296,7 +353,6 @@
         </div>
     </div>
 </body>
-<!--
 <script>
     const navSlide = () => {
         const menu = document.querySelector('.menu');
@@ -331,6 +387,7 @@
             }
         });
     });
+
 </script>
 
 
@@ -380,6 +437,7 @@
     const composeN = (...fns) => (...args) =>
         fns.reverse().
     reduce((x, f) => f.apply(f, [].concat(x)), args);
+
 </script>
 
 
@@ -391,7 +449,7 @@
     AOS.init({
         duration: 1200
     });
+
 </script>
--->
 
 </html>

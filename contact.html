@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        Ayush Karn
+        Contact - Ayush Karn
     </title>
     <link rel="icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -144,6 +144,66 @@
         cursor: pointer;
     }
 
+    @media only screen and (max-width: 760px) {
+
+        .nav,
+        .nav2 {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .wrapper {
+            font-size: 1.6em;
+        }
+
+        hr.soften,
+        hr.soften.white {
+            width: 90%;
+        }
+
+        .container .content {
+            width: 90%;
+            text-align: justify;
+            padding-top: 20px;
+
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .footer {
+            height: 700px;
+        }
+
+        .footer-menu li,
+        .footer-menu a {
+            display: block;
+            padding-top: 5px;
+        }
+
+        .footer .content {
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .get-in-touch .title {
+            font-size: 28px;
+        }
+
+        .get-in-touch .contact {
+            font-size: 15px;
+        }
+
+        .menu-list {
+            top: 40px;
+        }
+    }
+
 </style>
 
 <body>
@@ -191,21 +251,21 @@
     <div class="container" data-aos="fade-up" style="height: 800px;">
         <section class="get-in-touch">
             <h1 class="title">Get in touch</h1>
-            <form class="contact-form row">
+            <form class="contact-form row" action="https://formspree.io/xbjzyvwa" method="POST">
                 <div class="form-field col x-50">
-                    <input id="name" class="input-text js-input" type="text" required>
+                    <input id="name" class="input-text js-input" type="text" name="name" required>
                     <label class="label" for="name">Name</label>
                 </div>
                 <div class="form-field col x-50">
-                    <input id="email" class="input-text js-input" type="email" required>
-                    <label class="label" for="email">E-mail</label>
+                    <input id="email" class="input-text js-input" type="email" name="_replyto" required>
+                    <label class=" label" for="email">E-mail</label>
                 </div>
                 <div class="form-field col x-100">
-                    <input id="message" class="input-text js-input" type="text" required>
+                    <input id="message" class="input-text js-input" type="text" name="message" required>
                     <label class="label" for="message">Message</label>
                 </div>
                 <div class="form-field col x-100 align-center">
-                    <input class="submit-btn" type="submit" value="Submit">
+                    <input class="submit-btn" type="submit" value="Send">
                 </div>
             </form><br>
             <h1 class="title">Or Contact me Directly</h1>
@@ -214,7 +274,7 @@
         </section>
     </div>
 
-    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;height: 400px;">
+    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;">
         <div class="container-title" data-aos="fade-up" style="color: #fff;">
             LET ME CREATE WHAT YOU NEED.
             <hr class="soften white" />
