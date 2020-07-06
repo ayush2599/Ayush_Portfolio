@@ -83,7 +83,7 @@
 
         .items-container {
             width: 100%;
-            height: 5000px;
+            height: 5080px;
         }
 
         .more-width {
@@ -108,7 +108,8 @@
     <div class="nav" id="mynav">
         <div class="logo">
             <div class="stage">
-                <div class="wrapper">
+                <div class="wrapper" style="animation: none;">
+                    <!--
                     <div class="slash"></div>
                     <div class="sides">
                         <div class="side"></div>
@@ -116,13 +117,14 @@
                         <div class="side"></div>
                         <div class="side"></div>
                     </div>
+-->
                     <div class="text">
                         <div class="text--backing">ayushkarn.</div>
                         <div class="text--left">
-                            <div class="inner">ayushkarn.</div>
+                            <div class="inner" style="animation: none;">ayushkarn.</div>
                         </div>
                         <div class="text--right">
-                            <div class="inner">ayushkarn.</div>
+                            <div class="inner" style="animation: none;">ayushkarn.</div>
                         </div>
                     </div>
                 </div>
@@ -256,17 +258,18 @@
             </div>
 
         </div>
-        <div class="get-in-touch-2" data-aos="fade-up">
+        <div class="get-in-touch-2">
             <a class="get-in-touch-2-btn" href="#"> See more...</a>
         </div>
     </div>
 
-    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;">
-        <div class="container-title" data-aos="fade-up" style="color: #fff;">
+    <div class="container footer" style="background-color: rgb(18, 22, 72); color: #fff;">
+        <div class="container-title" style="color: #fff;">
             LET ME CREATE WHAT YOU NEED.
             <hr class="soften white" />
         </div>
-        <div class="footer-menu" data-aos="fade-up">
+
+        <div class="footer-menu">
             <ul class="footer-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -275,10 +278,11 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="content" data-aos="fade-up" style="margin-top: 20px;font-size: 0.8em; ">
-            © 2020 Ayush Karn. All rights reserved.
+
+        <div class="content" style="margin-top: 20px;font-size: 0.8em; ">
+            &copy; 2020 Ayush Karn. All rights reserved.
         </div>
-        <div class="social_media" data-aos="fade-up">
+        <div class="social_media">
             <a href="https://www.github.com/ayush2599"><i class="fa fa-github m-3"></i></a>
             <a href="https://www.linkedin/ayush-karn25"><i class="fa fa-linkedin m-3"></i></a>
             <a href="https://www.instagram.com/ayush_diaries"><i class="fa fa-instagram m-3"></i></a>
@@ -426,7 +430,8 @@
 
 <script id="rendered-js">
     AOS.init({
-        duration: 1200
+        duration: 1200,
+        once: true
     });
 
 </script>

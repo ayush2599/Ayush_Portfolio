@@ -114,7 +114,8 @@ body {
         transition: transform 0.5s ease-in;
         z-index: 1;
         color: #000;
-        border-bottom: 2px solid black;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.19), 0 10px 6px rgba(0, 0, 0, 0.23);
+
     }
 
     .menu-list li {
@@ -958,7 +959,6 @@ body {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    scroll-snap-align: start;
 }
 
 .container-title {
@@ -968,6 +968,145 @@ body {
     text-align: center;
     margin: 50px;
     font-weight: 900;
+}
+
+.container-title-casual {
+    font-family: 'Varela', sans-serif;
+    font-size: 2.2em;
+    color: #000;
+    text-align: center;
+    margin: 50px;
+    font-weight: 400;
+}
+
+.container-title-casual-sub {
+    font-family: 'Varela', sans-serif;
+    font-size: 1.8em;
+    color: #000;
+    text-align: center;
+    margin: 50px;
+    font-weight: 200;
+}
+
+
+.quote .text {
+    font-family: 'Varela', cursive;
+    font-size: 28px;
+    padding: 50px 300px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.quote .bracket {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    font-size: 80px;
+    font-weight: 200;
+
+}
+
+.quote .author {
+    font-family: 'Great Vibes', cursive;
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.latest {
+    display: flex;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.img_container {
+    display: inline-block;
+    margin: auto;
+    max-width: 900px;
+}
+
+.container_img1 {
+    width: 550px;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    animation-name: chng_img1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes chng_img1 {
+    0% {
+        background: url(images/portfolio1.jpg) center;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(images/portfolio2.jpg) center;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(images/portfolio3.jpg) center;
+        background-size: cover;
+    }
+}
+
+.container_img2 {
+    width: 250px;
+    height: 450px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    animation-name: chng_img2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes chng_img2 {
+    0% {
+        background: url(images/weather-app1.jpg) center;
+        background-size: cover;
+    }
+
+    45% {
+        background: url(images/weather-app1.jpg) center;
+        background-size: cover;
+    }
+
+    70% {
+        background: url(images/weather-app2.jpg) center;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(images/weather-app2.jpg) center;
+        background-size: cover;
+    }
+}
+
+.text_container {
+    width: 500px;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Varela', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    font-weight: 200;
+    padding: 30px;
+    line-height: 45px;
+}
+
+.text_container a {
+    text-decoration: none;
+    color: #24b0df;
+}
+
+.text_container a:hover {
+    color: #2b7086;
 }
 
 .container .skills {
@@ -989,20 +1128,21 @@ body {
     color: #fff;
     padding: 16px;
     margin: 10px;
+    font-weight: 600;
     text-decoration: none;
     background-size: 200% auto;
     background-image: linear-gradient(to right, #b37bb9 0%, #2343b1 51%, #b37bb9 100%);
     align-content: center;
+    background-color: #b083d1;
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
 .skills li:hover {
-    transition: 2s;
+    color: #000;
     background-position: right center;
-    box-shadow: -1px -1px 10px 4px rgba(0, 0, 0, 1) inset,
-        /* dark shadow      */
-        2px -2px 3px 0px rgba(255, 255, 255, 0.2),
-        /* white - top      */
-        2px 2px 3px 0px rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to right, #e2e2e2 0%, #e2e2e2 51%, #e2e2e2 100%);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .full-width {
@@ -1015,12 +1155,10 @@ body {
     background-blend-mode: overlay;
     background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
 }
 
-.header {
-    scroll-snap-align: start;
-}
 
 .line-outer {
     width: 2px;
@@ -1086,11 +1224,11 @@ hr.soften.white {
 }
 
 .circle:hover::after {
-    -webkit-animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s;
 }
 
 .circle:before {
-    -webkit-animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s;
 }
 
 .circle:after {

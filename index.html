@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Stalemate&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
     <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
@@ -148,8 +150,67 @@
 
         }
 
+        .latest {
+            display: block;
+        }
+
+        .quote .text {
+            padding: 10px 30px;
+            font-size: 15px;
+        }
+
+        .quote .bracket {
+            font-size: 35px;
+        }
+
+        .quote .author {
+            font-family: 'Great Vibes', cursive;
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .container-title-casual {
+            text-align: justify;
+            font-size: 1.7em;
+            margin: 40px;
+        }
+
+        .container-title-casual-sub {
+            font-size: 1.5em;
+            margin: 40px;
+        }
+
+        .img_container {
+            display: block;
+        }
+
+        .text_container {
+            display: block;
+            width: auto;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 20px;
+        }
+
+        .container_img1 {
+            width: 100%;
+            height: 25%;
+            margin: auto;
+        }
+
+        .container_img2 {
+            width: 70%;
+            height: 55%;
+            margin: auto;
+        }
+
         .circle-container {
             text-align: center;
+        }
+
+        .collab .container-title {
+            font-size: 1.9rem;
         }
 
         .items-container {
@@ -187,7 +248,7 @@
         }
 
         .get-in-touch-2 {
-            margin: auto;
+            margin: 30px auto 10px auto;
         }
 
         .get-in-touch-2-btn {
@@ -227,10 +288,11 @@
             line-height: 200px;
             background-size: cover;
             background-position: center;
+            background-attachment: scroll;
         }
 
         .artwork {
-            height: 1600px;
+            height: 1650px;
             margin: 20px auto;
             width: 100%;
         }
@@ -252,7 +314,7 @@
         }
 
         .artwork .items-container {
-            height: 1300px;
+            height: 1350px;
         }
 
         .artwork .item .rounded img {
@@ -323,57 +385,81 @@
 
     </div>
 
-    <div class="container quote" style="height: 500px;  background: linear-gradient(to bottom, #005aa7, #fffde4);">
-        <div class="line-outer">
-            <div class="line-inner" style="top: 60%;"></div>
-        </div>
-        <p style="text-align: center;
-           font-size: 1.5em;" data-aos="fade-up">
-            "Appreciate the struggles as opportunities to wake up"
+    <div class="container quote" style="height: 400px;  background: linear-gradient(to bottom, #005aa7, #fffde4);">
+        <p class="text" style="text-align: center;" data-aos="fade-up">
+            <span class="bracket"><i>"</i></span>
+            The more I live, the more I learn. The more I learn, the more I realize, the less I know.
+            <span class="bracket"><i>"</i></span>
             <br>
-            - Jeff Bridges
+            <span class="author"><br>- Michel Legrand - </span>
         </p>
-        <div class="line-outer" data-aos="fade-up">
-            <div class="line-inner" style="top: 20%;"></div>
-        </div>
     </div>
     <div class="container">
-        <div class="container-title" data-aos="fade-up">
+        <div class="container-title-casual">
+            Learning & exploring new things has been a part of my growing...
+        </div>
+        <div class="container-title-casual-sub">
+            and this time, it was learning <span data-aos="zoom-in-up" style="font-weight: 900">React.js</span>
+        </div>
+        <div class="latest">
+            <div class="text_container" data-aos="fade-up">
+                A Simple Portfolio was good to start with...
+                <br><br>
+                Thanks to <a href="http://madhavbahl.tech/" target="_blank">@madhav_bahl</a> for the wonderful webinar on it.
+            </div>
+            <div class="img_container">
+                <div class="container_img1" data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="1000"></div>
+            </div>
+        </div>
+
+        <div class="latest">
+            <div class="img_container">
+                <div class="container_img2" data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1000"></div>
+            </div>
+
+            <div class="text_container" data-aos="fade-up">
+                Then I created a 'Weather App' using React & Weather API
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="container-title">
             Skills
             <hr class="soften" />
         </div>
         <div class="skills">
             <ul>
-                <li data-aos="flip-left">HTML5</li>
-                <li data-aos="flip-left">CSS3</li>
-                <li data-aos="flip-left">JavaScript</li>
-                <li data-aos="flip-left">Java</li>
-                <li data-aos="flip-left">Python</li>
-                <li data-aos="flip-left">C</li>
-                <li data-aos="flip-left">C++</li>
-                <li data-aos="flip-left">React JS</li>
-                <li data-aos="flip-left">Angular JS</li>
-                <li data-aos="flip-left">PHP</li>
-                <li data-aos="flip-left">MySQL</li>
-                <li data-aos="flip-left">AJAX</li>
-                <li data-aos="flip-left">JSON</li>
-                <li data-aos="flip-left">Node.js</li>
-                <li data-aos="flip-left">Git</li>
-                <li data-aos="flip-left">GitHub</li>
-                <li data-aos="flip-left">Matlab</li>
-                <li data-aos="flip-left">Bootstrap</li>
-                <li data-aos="flip-left">Materialize CSS</li>
-                <li data-aos="flip-left">Illustrator</li>
-                <li data-aos="flip-left">Photoshop</li>
-                <li data-aos="flip-left">Indesign</li>
-                <li data-aos="flip-left">Hyper-Realism Sketch</li>
-                <li data-aos="flip-left">Painting</li>
-                <li data-aos="flip-left">Illustration</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C / C++</li>
+                <li>React JS</li>
+                <li>Angular JS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>AJAX</li>
+                <li>JSON</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Matlab</li>
+                <li>Bootstrap</li>
+                <li>Materialize CSS</li>
+                <li>Illustrator</li>
+                <li>Photoshop</li>
+                <li>Indesign</li>
+                <li>Hyper-Realism Sketch</li>
+                <li>Painting</li>
+                <li>Illustration</li>
             </ul>
         </div>
     </div>
     <div class="container" style="background-color:#e6e2dc;">
-        <div class="container-title" data-aos="fade-up">
+        <div class="container-title">
             What I Do
             <hr class="soften" />
         </div>
@@ -415,17 +501,17 @@
             </div>
         </div>
         <div class="content" data-aos="fade-up">
-            Have been passionate about web development since my early days now a enthusiast in same with knowledge in Javascript, jQuery and React.js. Also into backend developing, with python, C++ and Java, along with a really good understanding of database. I am also a Realism Artist who invests some time of the day with pencils and paper along with being a part of an art club with the finest group of artists in town. Aiming in owning an Art gallery someday in life.<br>
+            Have been passionate about web development since my early days now a enthusiast in same with knowledge in Javascript, jQuery and React.js. Also into backend developing, with python, C++ and Java, along with a really good understanding of database.<br><br> I am also a Realism Artist who invests some time of the day with pencils and paper along with being a part of an art club with the finest group of artists in town. Aiming in owning an Art gallery someday in life.<br><br>
             Apart from this, I do a bit of everything, from UI/UX design, App Dev, Software Dev to digital art.
         </div>
     </div>
-    <div class="container" data-aos="fade-up">
-        <div class="container-title" data-aos="fade-up">
+    <div class="container">
+        <div class="container-title">
             My Previous Works
             <hr class="soften" />
         </div>
         <div class="items-container items-container-projects more-width" style="">
-            <div class="item no-bg more-width" data-aos="fade-up">
+            <div class="item no-bg more-width">
                 <div class="item-img rounded">
                     <img src="images/Nepali_corpus2.png">
                 </div>
@@ -438,7 +524,7 @@
                 </div>
             </div>
 
-            <div class="item no-bg" data-aos="fade-up">
+            <div class="item no-bg">
 
                 <div class="item-des des-width">
                     <div class="desc-title">
@@ -452,29 +538,29 @@
                 </div>
             </div>
         </div>
-        <div class="get-in-touch-2" data-aos="fade-up">
+        <div class="get-in-touch-2">
             <a class="get-in-touch-2-btn" href="projects.html"> Check out all my projects...</a>
         </div>
     </div>
-    <div class="container" data-aos="fade-up" style="background-color: #e6e2dc;width: 80%;margin:20px auto; border-radius: 30px">
-        <div class="container-title" data-aos="fade-up">
+    <div class="container collab" style="background-color: #e6e2dc;width: 80%;margin:20px auto; border-radius: 30px;box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}" data-aos="fade-up">
+        <div class="container-title">
             Lets create something Amazing Together
             <hr class="soften" />
         </div>
-        <div class="content" data-aos="fade-up">
+        <div class="content">
             Have some work for me? UI Design? Need a Website? Or a Sketch? Feel free to contact me for anything.
 
         </div>
-        <div class="get-in-touch-2" data-aos="fade-up">
+        <div class="get-in-touch-2">
             <a class="get-in-touch-2-btn" href="#"> Get in touch</a>
         </div>
     </div>
-    <div class="container artwork" data-aos="fade-up">
-        <div class="container-title full-width" data-aos="fade-up">
+    <div class="container artwork">
+        <div class="container-title full-width">
             Arts by Ayush
         </div>
         <div class="items-container">
-            <div class="item" data-aos="fade-up">
+            <div class="item" data-aos="fade-up" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                 <div class="item-img">
                     <img src="images/Hands.jpg">
                 </div>
@@ -492,7 +578,7 @@
                 </div>
             </div>
 
-            <div class="item" data-aos="fade-up">
+            <div class="item" data-aos="fade-up" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                 <div class="item-img">
                     <img src="images/Goku%20Digital%20Art.jpg">
                 </div>
@@ -500,21 +586,21 @@
                     <div class="desc-title">
                         "Goku - Digital Art"
                     </div>
-                    <br>This is description.
+                    <br>My first attempt in digital art using Adobe Photoshop
                 </div>
             </div>
         </div>
-        <div class="get-in-touch-2" data-aos="fade-up">
+        <div class="get-in-touch-2">
             <a class="get-in-touch-2-btn" href="artworks.html">See More...</a>
         </div>
     </div>
-    <div class="container footer" data-aos="fade-up" style="background-color: rgb(18, 22, 72); color: #fff;">
-        <div class="container-title" data-aos="fade-up" style="color: #fff;">
+    <div class="container footer" style="background-color: rgb(18, 22, 72); color: #fff;">
+        <div class="container-title" style="color: #fff;">
             LET ME CREATE WHAT YOU NEED.
             <hr class="soften white" />
         </div>
 
-        <div class="footer-menu" data-aos="fade-up">
+        <div class="footer-menu">
             <ul class="footer-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -524,10 +610,10 @@
             </ul>
         </div>
 
-        <div class="content" data-aos="fade-up" style="margin-top: 20px;font-size: 0.8em; ">
+        <div class="content" style="margin-top: 20px;font-size: 0.8em; ">
             &copy; 2020 Ayush Karn. All rights reserved.
         </div>
-        <div class="social_media" data-aos="fade-up">
+        <div class="social_media">
             <a href="https://www.github.com/ayush2599"><i class="fa fa-github m-3"></i></a>
             <a href="https://www.linkedin/ayush-karn25"><i class="fa fa-linkedin m-3"></i></a>
             <a href="https://www.instagram.com/ayush_diaries"><i class="fa fa-instagram m-3"></i></a>
@@ -675,7 +761,8 @@
 
 <script id="rendered-js">
     AOS.init({
-        duration: 1200
+        duration: 1200,
+        once: true
     });
 
 </script>
